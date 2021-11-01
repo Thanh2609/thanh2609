@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <style>
+        body{
+            background-color: rgb(237, 245, 127);
+        }
+        td{
+            color: rgb(58, 122, 74);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div style="align-items: center;">
+        
+        <table border="1" style="background-color:aquamarine" width="500" >
+            <caption align="top" style="color: rgb(58, 122, 74);font-size: 20px;"><b>Phiếu đăng ký tham gia chương trình khuyến mãi</b></caption>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" placeholder="Nhập họ và tên" size="40"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" placeholder="Nhập địa chỉ" size="30"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="number" placeholder="Nhập sđt" size="25"></td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td>
+                    <input type="radio" name="phai" id="nam" checked="checked" />
+                    <label for="nam"> Nam</label>
+                    <input type="radio" name="phai" id="nu" />
+                    <label for="nu"> Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề Nghiệp</td>
+                <td><select >
+                    <option value="1" selected="selected">Giáo viên</option>
+                    <option value="2">Bác sĩ</option>
+                    <option value="3">Kỹ sư</option>
+                    <option value="4">Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td><select  size=“4" multiple="multiple" style="width:200px">
+                    <option value="1" selected="selected">Kem đánh răng</option>
+                    <option value="2">Bột giặt </option>
+                    <option value="3">Dầu gội đầu</option>
+                    <option value="4">Sữa tắm</option>
+                    </select>
+                </td>  
+           </tr>
+           <tr>
+               <td>Số người dự đoán tham gia</td>
+               <td><input type="number" placeholder="Nhập số người tgia"></td>
+           </tr>
+           <th colspan="2">
+            <label id="cauchao" style="color:#FF0000"> </label>   
+            <input type="button"  value="Đồng ý"onclick="cauchao.innerText='Bạn đã đăng kí thành công'" />
+            </th>
+        </table>
+
+    </div></center>
+</body>
+</html>
